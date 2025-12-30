@@ -1,0 +1,7 @@
+{
+  "name": "typing-battles",
+  "main": "src/server.ts",
+  "compatibilityFlags": [
+    "nodejs_compat"
+  ]
+}
