@@ -39,6 +39,13 @@ class Server {
     const app = express();
     const server = createServer(app);
 
+  app.get('/ping', (_req, res) => {
+    res.status(200).json({
+      status: 'ok',
+      message: 'pong'
+    });
+  });
+    
     this.io = new WS_Server(server, {
       cors: {
         origin: "*", // En producción, cambiar "*" por "https://tu-usuario.github.io"
